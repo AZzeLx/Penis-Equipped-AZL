@@ -63,13 +63,13 @@ public Action Command_Penis(int client, int args)
 {
 	if(g_PenisEnabled[client])
 	{
-		PrintToChat(client, "\x02Penis is now off");
+		PrintToChat(client, " \x02Penis is now off");
 		g_PenisEnabled[client] = false;
 		SetClientCookie(client, g_Penis_Cookie, "0");
 	}
 	else
 	{
-		PrintToChat(client, "\x04Penis is now on");
+		PrintToChat(client, " \x04Penis is now on");
 		g_PenisEnabled[client] = true;
 		SetClientCookie(client, g_Penis_Cookie, "1");
 	}
